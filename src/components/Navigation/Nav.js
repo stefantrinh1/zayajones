@@ -42,10 +42,16 @@ class Navigation extends React.Component {
   ShowOrHideNav() { (!this.state.navigationOpen ? this.OpenNav() : this.CloseNav()) }
 
   // brings Nav Onto Screen and disabled scrolling
-  OpenNav() { disableScroll.on(); this.setState({ navigationOpen: true }) }
+  OpenNav() { 
+    // disableScroll.on();  
+    this.setState({ navigationOpen: true }) 
+  }
 
   // move the navigation off screen and enabled scrolling
-  CloseNav() { disableScroll.off(); this.setState({ navigationOpen: false }) }
+  CloseNav() { 
+    // disableScroll.off(); 
+    this.setState({ navigationOpen: false }) 
+  }
 
   // Handles the Clicks
   HandleNavAction(event) {
@@ -91,11 +97,12 @@ class Navigation extends React.Component {
     // List of the Nav items and their paths
     // this will be loaded dynamically in the future
     let links = [
-      { label: 'HOME', link: "/" },
-      { label: 'ABOUT', link: "/about" },
-      { label: 'BLOG', link: "/blog" },
-      { label: 'PORTFOLIO', link: "/portfolio" },
-      { label: 'INSTAGRAM', link: "/instagram" }
+      { label: 'Home', link: "/" },
+      { label: 'About', link: "/about" },
+      { label: 'Experiences', link: "/experiences" },
+      { label: 'CiM Assessments', link: "/cimassessments" },
+      // { label: 'Reflections', link: "/reflections" },
+      { label: 'Contact', link: "/contact" }
     ];
 
     return (

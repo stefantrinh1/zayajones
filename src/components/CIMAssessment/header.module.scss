@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+}
+
+.header div:nth-child(1) {
+    opacity: 0.3;
+}
+
+.headertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    vertical-align: middle;
+    opacity: 0.8;
+
+}

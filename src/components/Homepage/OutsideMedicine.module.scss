@@ -1,0 +1,66 @@
+.personalcontainer {
+  margin: 2em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 1em;
+}
+
+.personalcontainer h3 {
+  padding-bottom: 0.5em;
+}
+.personalcontainer div {
+  width: 100%;
+}
+
+
+.personalcontainer button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5%;
+  margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+  background: #0091ff;
+}
+
+.desktoptitle {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .personalcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2em 0 0;
+  }
+
+  .desktoptitle {
+    display: block;
+  }
+  .mobiletitle {
+    display: none;
+  }
+  .personalcontainer div .personalcontainer div {
+    width: 50%;
+  }
+
+  .textcontainer {
+    box-sizing: border-box;
+    padding: 0;
+    align-self: center;
+  }
+
+  .textcontainer > * {
+    padding: 0 1em;
+    box-sizing: border-box;
+  }
+
+  .textcontainer h3 {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .textcontainer button {
+    margin-bottom: 1em;
+  }
+}

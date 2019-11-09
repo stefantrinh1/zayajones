@@ -1,0 +1,29 @@
+
+.contactdetails {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5em;
+    // text-align: left;
+}
+
+.contactdetails h3 {
+    margin-top: 0;
+}
+.seperator {
+    width: 2em;
+    height: 0.3em;
+    background: grey;
+    display: inline-block;
+}
+.contactdetails div {
+    display: block;
+}
+
+.socialicon {
+    display: inline;
+    vertical-align: text-top;
+    max-height: 1.1em;
+    height: 1.1em;
+}

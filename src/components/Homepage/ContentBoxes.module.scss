@@ -1,0 +1,42 @@
+/* ========== Benefits ========= */
+
+.contentboxes {
+  display: flex;
+  padding: 2.5% 5%;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contentboxes a {
+    width: 100%;
+}
+
+.box {
+  width: 100%;
+  padding: 1%;
+  color: #333333;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.box p {
+  color: #333333;
+}
+
+.box div:nth-child(1) {
+    margin: 0 auto;
+    width: 30%;
+  }
+
+
+@media (min-width: 480px) {
+  .contentboxes {
+    font-size: calc(6px + 1.3vw);
+  }
+
+  .contentboxes a {
+    width: 33.333%;
+  }
+
+}

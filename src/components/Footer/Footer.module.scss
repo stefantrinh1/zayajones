@@ -1,14 +1,26 @@
 @import "../../basestyles/colors.scss";
 
-footer {
-    width: 100%;
-    background: $primary;
-    color: white;
-    text-align: right;
-    padding: 1rem;
+.footer {
+  width: 100%;
+  background:#0091FF;
+  color: white;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo img {
+  height: 2em;
+}
+
+.copyright {
+  text-align: right;
+  flex-grow: 1;
 }

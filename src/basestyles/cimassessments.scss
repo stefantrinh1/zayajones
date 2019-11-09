@@ -1,0 +1,37 @@
+.assessments {
+  font-size: 1rem;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.assessmentfilter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.assessments button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  margin: 0.5em;
+  font-size: 0.9em;
+  color: white;
+  font-weight: bold;
+  background: #0091ff;
+}
+@media (min-width: 599px) {
+.assessmentimage {
+    width: 75%;
+    margin: 0 auto;
+}
+}
+@media (min-width: 767px) {
+  .assessmentfilter {
+    width: 80%;
+  }
+}

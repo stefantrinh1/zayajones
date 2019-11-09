@@ -12,7 +12,7 @@
   width: 100%;
   padding: 0.5rem;
   box-sizing: border-box;
-  background: $primary-dark;
+  background: #0091FF;
 }
 
 // Icons Styles
@@ -21,8 +21,8 @@
   text-align: left;
 }
 .navIcon img {
-  max-height: 40px;
-  max-width: 40px;
+  min-width: 80px;
+  max-width: 120px;
 }
 
 // Hamburger and Close Block Styles
@@ -44,7 +44,7 @@
   margin: 4% 0 0 auto;
   box-sizing: border-box;
   box-shadow: 2px 2px black;
-  background: $secondary;
+  background: white;
 }
 .hamburger div:nth-child(2) {
   width: 40px;
@@ -70,6 +70,7 @@
   display: block;
   padding-inline-start: 0;
   text-align: left;
+  margin: 0;
 }
 
 .navMenu a {
@@ -121,9 +122,10 @@
   }
 
   .navIcon img {
+    min-width: 100px;
     max-height: unset;
     max-width: unset;
-    width: calc(20px + 2.5vw);
+    height: 2.2em;
   }
 
   .navMenu {
@@ -133,10 +135,7 @@
     display: flex;
     align-items: center;
     margin: 0 0 0 auto;
-  }
-
-  .navMenu li {
-    font-size: calc(7px + 1vw);
+    justify-content: flex-end;
   }
 
   .navItem {
@@ -146,5 +145,11 @@
   .hamburger,
   .hamburgerContainer {
     display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .navContainer {
+    font-size: calc(6px + 1.3vw);
   }
 }

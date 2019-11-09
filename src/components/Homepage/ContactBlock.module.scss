@@ -1,0 +1,9 @@
+@media (min-width: 767px) {
+  .contactblock {
+    display: flex;
+  }
+  .contactblock section {
+      width: 50%;
+      align-self: center;
+  }
+}

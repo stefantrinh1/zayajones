@@ -1,0 +1,112 @@
+.header {
+  font-size: calc(3px + 2.5vw);
+  position: relative;
+}
+
+.headerimage {
+  border-radius: 5% 3% 10%;
+  transform: translate(-25%, 0%);
+  overflow: hidden;
+}
+
+.copycontainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 5px;
+}
+
+.copybox1 {
+  font-size: 1.3em;
+}
+
+.copybox2 {
+  font-size: 1.15em;
+}
+
+.copybox2 h3 {
+  font-weight: 300;
+}
+
+.copybox3 {
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  font-weight: bold;
+}
+
+.copybox3 p {
+  margin-bottom: 0;
+}
+
+.headerbtn button {
+  background: black;
+  padding: 0.5em 1em;
+  color: white;
+  text-align: center;
+  border-radius: 500px;
+  border: none;
+  margin: 3vw 0;
+}
+
+@media (min-width: 767px) {
+  .header {
+    font-size: calc(1px + 2vw);
+    position: relative;
+    margin: 1%;
+    padding-bottom: 5%;
+  }
+  .headerimage {
+    border-radius: 10%;
+    transform: unset;
+    width: 40%;
+    margin: 0 auto 0;
+    transform: translateY(10%);
+  }
+
+  .copycontainer {
+    position: unset;
+  }
+
+  .copybox1 {
+    width: 33%;
+    background: #5fd8b6;
+    border-radius: 20%;
+    padding: 2%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .copybox1 h1 {
+      margin-bottom: 30%;
+  }
+
+  .copybox2 {
+    background: #335066;
+    border-radius: 20%;
+    text-align: right;
+    color: white;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    padding: 5% 2%;
+  }
+
+  .copybox2 * {
+    width: 65%;
+    font-weight: bold;
+    margin: 0 0 20% auto;
+  }
+
+  .headerbtn {
+      position: absolute;
+      top: 60%;
+      left: 2%;
+  }
+
+}

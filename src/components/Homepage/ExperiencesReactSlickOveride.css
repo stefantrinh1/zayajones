@@ -1,0 +1,24 @@
+/* This file is for overriding the default css 
+in the experiences carousel.  */
+
+@media (min-width:767px) {
+
+    .slick-arrow {
+        z-index: 1000;
+        transform: scale(1.5);
+        transition: all ease-in-out 0.5s;
+        
+    }
+
+    .slick-arrow:hover {
+        transform: scale(2);
+    }
+
+    .slick-prev {
+        left: 1rem;
+    }
+
+    .slick-next {
+        right: 1rem;
+    }
+}

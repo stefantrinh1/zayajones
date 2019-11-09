@@ -1,9 +1,25 @@
 @import "./colors.scss";
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 
 body {
-    width: 100vw;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    min-width: 320px;
 }
-// font-family: 'Playfair Display', serif;
-// font-family: 'Montserrat', sans-serif;
+
+a{
+    text-decoration: none;
+}
+// font-family: 'Roboto', sans-serif;
+
+button:hover {
+    filter: brightness(0.8);
+    opacity: 0.8;
+
+}
+
+@media (min-width:767px) {
+    body {
+    font-size: calc(6px + 1.3vw);
+    }
+}

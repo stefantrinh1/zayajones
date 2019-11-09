@@ -1,15 +1,17 @@
 import React from "react";
 import Styles from "./Footer.module.scss";
+import Logo from '../../images/logo.png';
 
 const Footer = () => (
-        
-  <footer>
-    © {new Date().getFullYear()},
-    {` `}
-    <a href="https://www.zayajones.com">Zayajones.com</a>
+  <footer className={Styles.footer}>
+    <div className={Styles.logo}>
+      <img src={Logo} />
+    </div>
+    <div className={Styles.copyright}>
+      © {new Date().getFullYear()},{` `}
+      <a href="https://www.zayajones.com">Zayajones.com</a>
+    </div>
   </footer>
-
 )
 
 export default Footer
-
