@@ -6,12 +6,12 @@ import SEO from "../components/seo";
 import "../basestyles/index.scss";
 
 import Header from "../components/Homepage/Header";
-import About from "../components/Homepage/About";
-import Experiences from "../components/Homepage/Experiences";
+import ExperiencesBlock from "../components/Homepage/ExperiencesBlock";
 import ContentBoxes from "../components/Homepage/ContentBoxes";
 import ExperiencesCarousel from '../components/Homepage/ExperiencesCarousel';
 import OutsideMedicine from '../components/Homepage/OutsideMedicine';
 import ContactBlock from "../components/Homepage/ContactBlock";
+import AboutBlock from "../components/Homepage/AboutBlock";
 
 export default ({ data }) => {
   const dataCV=data.allContentfulAbout.edges[0].node.cv.file.url
@@ -30,7 +30,7 @@ export default ({ data }) => {
         role={data.role}
       />
 
-      <About
+      <AboutBlock
         introSnippet={data.introSnippet}
         aboutTitle={data.aboutTitle}
         aboutCopy={data.aboutCopy.childMarkdownRemark.html}
@@ -38,7 +38,7 @@ export default ({ data }) => {
         CV={dataCV}
       />
 
-      <Experiences
+      <ExperiencesBlock
         experiencesTitle={data.experiencesTitle}
         experiencesCopy={data.experiencesCopy.childMarkdownRemark.html}
         experiencesImage={data.experiencesImage.fluid}

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import Styles from "./Experiences.module.scss"
+import Styles from "./ExperiencesBlock.module.scss"
 
 export default props => (
   <section className={Styles.experiencescontainer}>
