@@ -6,7 +6,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Styles from "./ExperiencesCarousel.module.scss"
-import "./ExperiencesReactSlickOveride.css";
+import "./ExperiencesReactSlickOveride.scss";
 
 export default () => {
   const data = useStaticQuery(graphql`

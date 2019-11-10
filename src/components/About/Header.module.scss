@@ -1,3 +1,5 @@
+@import "../../basestyles/colors.scss";
+
 .header {
     margin: 1em 0;
 }
@@ -15,7 +17,7 @@
 .seperator {
     width: 3em;
     height: 0.3em;
-    background: #5EB7BF;
+    background: $secondary;
 }
 
 .textcontainer button {
@@ -25,7 +27,6 @@
     margin-right: 1rem;
     color: white;
     font-weight: bold;
-    background: #5EB7BF;
   }
 
   @media (min-width:767px) {

@@ -1,3 +1,5 @@
+@import "../../basestyles/colors.scss";
+
 .contactform {
     width:100%;
 }
@@ -28,7 +30,7 @@ box-sizing: border-box;
     border: white solid 2px;
     box-sizing: border-box;
     color:white;
-    background: #e9e9fb
+    background: $primary;
 }
 
 .formdatafields fieldset input::placeholder,
@@ -42,7 +44,7 @@ color: white;
 
 .formdatafields button {
     display:block;
-    background: #BECAFE;
+    background: $secondary;
     padding: 0.5em 1em;
     border: none;
     color: white;

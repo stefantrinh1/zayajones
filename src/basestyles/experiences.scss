@@ -1,15 +1,13 @@
+@import "./colors.scss";
+
 #experiencepage {
     padding: 1em;
-}
-
-#experiencepage h1 {
-
 }
 
 .seperator {
     width: 3em;
     height: 0.3em;
-    background: #5EB7BF;
+    background: $secondary;
 }
 
 .experiences {

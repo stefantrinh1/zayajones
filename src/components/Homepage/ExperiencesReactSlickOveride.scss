@@ -1,8 +1,12 @@
 /* This file is for overriding the default css 
 in the experiences carousel.  */
+@import '../../basestyles/colors.scss';
 
 @media (min-width:767px) {
 
+    .slick-slider {
+        padding: 0 1.5em;
+    }
     .slick-arrow {
         z-index: 1000;
         transform: scale(1.5);
@@ -11,14 +15,22 @@ in the experiences carousel.  */
     }
 
     .slick-arrow:hover {
-        transform: scale(2);
+        transform: scale(3);
     }
 
     .slick-prev {
-        left: 1rem;
+        left: 1em;
     }
 
     .slick-next {
-        right: 1rem;
+        right: 1em;
     }
+    .slick-prev:before, .slick-next:before {
+     color: $secondary;
+    }
+    .slick-dots {
+    width: 90%;
+    margin: 0 auto;
+    }
+
 }

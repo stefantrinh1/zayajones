@@ -1,3 +1,4 @@
+@import "../../basestyles/colors.scss";
 .aboutcontainer {
   padding: 1rem;
 }
@@ -39,13 +40,6 @@
   font-weight: bold;
 }
 
-.aboutbtn {
-  background: #BECAFE;
-}
-
-.downloadbtn {
-  background: #BECAFE
-}
 
 @media (min-width: 767px) {
   .aboutcontainer {
@@ -57,6 +51,7 @@
   .textcontainer {
     grid-column: 1 / span 3;
     padding: 0;
+    align-self: center;
   }
 
   .imagescontainer {
