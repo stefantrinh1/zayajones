@@ -1,5 +1,4 @@
 .contactform {
-    background: #46ad96;
     width:100%;
 }
 
@@ -29,6 +28,7 @@ box-sizing: border-box;
     border: white solid 2px;
     box-sizing: border-box;
     color:white;
+    background: #e9e9fb
 }
 
 .formdatafields fieldset input::placeholder,
@@ -37,11 +37,12 @@ color: white;
 }
 .formdatafields fieldset input {
     border-radius: 80px;
+    
 }
 
 .formdatafields button {
     display:block;
-    background: rgba(25, 53, 89, 0.65);
+    background: #BECAFE;
     padding: 0.5em 1em;
     border: none;
     color: white;
