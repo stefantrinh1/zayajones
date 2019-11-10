@@ -32,6 +32,7 @@ box-sizing: border-box;
     color:white;
     background: $primary;
     box-shadow: 1px 2px 3px grey;
+    border: none;
 }
 
 .formdatafields fieldset input::placeholder,

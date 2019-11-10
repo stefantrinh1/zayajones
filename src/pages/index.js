@@ -99,7 +99,7 @@ export const query = graphql`
           }
           aboutPhotos {
             id
-            fluid(maxWidth: 1500) {
+            fluid(maxWidth: 200) {
               ...GatsbyContentfulFluid
             }
           }

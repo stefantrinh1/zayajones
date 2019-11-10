@@ -2,12 +2,13 @@
 in the experiences carousel.  */
 @import "../../basestyles/colors.scss";
 
+.slick-slider button {
+    box-shadow: 0 0 0 black;
+  }
+
 @media (min-width: 767px) {
   .slick-slider {
     padding: 0 1.5em;
-  }
-  .slick-slider button {
-    box-shadow: 0 0 0 black;
   }
 
   .slick-arrow {
