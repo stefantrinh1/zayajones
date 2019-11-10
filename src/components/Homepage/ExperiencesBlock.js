@@ -7,7 +7,7 @@ export default props => (
   <section className={Styles.experiencescontainer}>
     <div className={Styles.textcontainer}>
       <h3>{props.experiencesTitle}</h3>
-      <p dangerouslySetInnerHTML={{ __html: props.experiencesCopy }} />
+      <div dangerouslySetInnerHTML={{ __html: props.experiencesCopy }} />
       <Link to="/experiences">
         <button className={Styles.experiencesbtn}>See More</button>
       </Link>

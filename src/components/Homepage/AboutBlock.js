@@ -11,7 +11,7 @@ export default props => {
       <div className={Styles.textcontainer}>
         <h5>{props.introSnippet}</h5>
         <h3>{props.aboutTitle}</h3>
-        <p dangerouslySetInnerHTML={{ __html: props.aboutCopy }} />
+        <div dangerouslySetInnerHTML={{ __html: props.aboutCopy }} />
         <Link to="/about">
           <button className={Styles.aboutbtn}>See Full Page</button>
         </Link>
