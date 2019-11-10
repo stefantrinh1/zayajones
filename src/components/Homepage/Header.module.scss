@@ -69,10 +69,10 @@
   .copycontainer {
     position: unset;
   }
-
+  
   .copybox1 {
     width: 33%;
-    background: #5fd8b6;
+    background: #e9e9fb;
     border-radius: 20%;
     padding: 2%;
     position: absolute;
@@ -85,7 +85,7 @@
   }
 
   .copybox2 {
-    background: #335066;
+    background: #BECAFE;
     border-radius: 20%;
     text-align: right;
     color: white;
@@ -107,6 +107,10 @@
       position: absolute;
       top: 60%;
       left: 2%;
+  }
+
+  .headerbtn button {
+    background: #BECAFE;
   }
 
 }
