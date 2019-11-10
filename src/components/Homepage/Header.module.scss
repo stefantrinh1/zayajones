@@ -1,11 +1,11 @@
 .header {
-  font-size: calc(3px + 2.5vw);
+  font-size: calc(2px + 2.5vw);
   position: relative;
 }
 
 .headerimage {
   border-radius: 5% 3% 10%;
-  transform: translate(-25%, 0%);
+  transform: translate(-35%, 0%);
   overflow: hidden;
 }
 
@@ -15,6 +15,7 @@
   left: 50%;
   bottom: 0;
   right: 5px;
+  text-align: right;
 }
 
 .copybox1 {
@@ -22,7 +23,7 @@
 }
 
 .copybox2 {
-  font-size: 1.15em;
+  font-size: 1.5em;
 }
 
 .copybox2 h3 {
@@ -35,6 +36,7 @@
   bottom: 10px;
   right: 5px;
   font-weight: bold;
+  width: 75%;
 }
 
 .copybox3 p {
@@ -68,6 +70,7 @@
 
   .copycontainer {
     position: unset;
+    text-align: left;
   }
   
   .copybox1 {
@@ -101,6 +104,10 @@
     width: 65%;
     font-weight: bold;
     margin: 0 0 20% auto;
+  }
+
+  .copybox3 {
+    width: unset;
   }
 
   .headerbtn {

@@ -14,12 +14,12 @@ export default () => {
         <p>t: +1(916)-281-7417</p>
         <p>e: aryunzaya.jones@rvu.edu</p>
         <p>
-          <img className={Styles.socialicon} src={InstagramIcon} /> &nbsp;Zayaya
+          <img className={Styles.socialicon} src={InstagramIcon} /> &nbsp;Zayayaya
         </p>
-        <p>
+        {/* <p>
           <img className={Styles.socialicon} src={LinkedinIcon} />{" "}
           &nbsp;ZayaJones
-        </p>
+        </p> */}
       </div>
     </section>
   )

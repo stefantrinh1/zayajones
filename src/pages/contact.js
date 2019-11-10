@@ -17,7 +17,7 @@ const Contact = () => (
         <h1>Contact Me</h1>
         <p>
           Please Contact Me if you have any further questions or have any
-          queries. I look forward to hearing from you.
+          enquiries. I look forward to hearing from you.
         </p>
       </div>
       <ContactDetails />
