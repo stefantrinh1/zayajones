@@ -130,6 +130,7 @@
 .loadingScreen .LoadingWidgetContainer img {
   -webkit-animation: rotating 1s linear infinite;
   animation: rotating 1s linear infinite;
+  max-width: 100px;
 }
 @-webkit-keyframes rotating {
   from {

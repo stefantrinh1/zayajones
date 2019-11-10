@@ -6,7 +6,7 @@ import Styles from "./Header.module.scss"
 const Header = props => (
   <header className={Styles.header}>
     <div className={Styles.headerimage}>
-      <Img fluid={props.headerImage} />
+      <Img className={Styles.image} fluid={props.headerImage} />
     </div>
     <div className={Styles.copycontainer}>
       <div className={Styles.copybox1}>

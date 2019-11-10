@@ -1,10 +1,10 @@
 .carousel {
-    margin: 0 1em 2em;
+    margin: 0 0 2em;
     
 }
 
 .carousel h3 {
-    margin: 0;
+    margin: 0 1em;
 }
 
 .slide {
@@ -20,9 +20,10 @@
     font-weight: 700;
 }
 
-.slide div {
+.slide .image{
     height: calc(100px + 15vw);
     border-radius: 30px;
+    box-shadow: 3px 3px 6px grey;
 }
 
 .slide p {

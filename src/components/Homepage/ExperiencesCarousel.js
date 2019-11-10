@@ -76,7 +76,7 @@ export default () => {
           return (
             <div className={Styles.slide} key={slide.id} >
                 <h4>{slide.experienceTitle}</h4>
-              <Img fluid={slide.experiencePhoto.fluid} />
+              <Img className={Styles.image} fluid={slide.experiencePhoto.fluid} />
               <p className={Styles.experiencedate}>{slide.experienceDate}</p>
               <p>{slide.experienceDescription.substr(0, 100)}....</p>
             </div>

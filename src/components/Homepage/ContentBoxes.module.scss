@@ -24,9 +24,10 @@
   color: #333333;
 }
 
-.box div:nth-child(1) {
+.box .image {
     margin: 0 auto;
     width: 30%;
+    transition: all ease-in-out 1s;
   }
 
 
@@ -37,6 +38,10 @@
 
   .contentboxes a {
     width: 33.333%;
+
+    &:hover > .box > .image  {
+      transform: rotate(360deg);      
+    }
   }
 
 }

@@ -13,7 +13,7 @@ export default props => (
       </Link>
     </div>
     
-      <Img fluid={props.experiencesImage} />
+      <Img className={Styles.image} fluid={props.experiencesImage} />
     
   </section>
 )

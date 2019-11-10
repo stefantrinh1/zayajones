@@ -33,6 +33,7 @@ export default ({ data }) => {
                 <div className="experienceinner">
                   <h3>{experience.experienceTitle}</h3>
                   <p>{experience.experienceDate}</p>
+                  <div className="seperator" />
                   <p>{experience.experienceDescription}</p>
                 </div>
               </div>

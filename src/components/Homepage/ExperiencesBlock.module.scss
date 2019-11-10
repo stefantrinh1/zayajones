@@ -10,9 +10,10 @@
   }
 
 
-.experiencescontainer div:nth-child(2) {
+.experiencescontainer .image {
   margin: 1rem 0;
   border-radius: 10%;
+  box-shadow: 5px 3px 7px grey;
 }
 
 .experiencescontainer button {
@@ -38,8 +39,9 @@
     align-self: center;
   }
 
-  .experiencescontainer > div:nth-child(2) {
+  .experiencescontainer > .image{
     width: 40%;
     box-sizing: border-box;
+    box-shadow: 5px 3px 7px grey;
   }
 }
