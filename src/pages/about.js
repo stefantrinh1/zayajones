@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -21,7 +20,7 @@ export default ({ data }) => {
              <Header 
              headerTitle={dataHeader.headerTitle}
              headerText={dataHeader.headerText.childMarkdownRemark.html}
-             headerImage={dataHeader.headerImage.fluid}
+             headerImage={dataHeader.headerImage}
              headerCV={dataHeader.cv.file.url}
              />
 
@@ -44,6 +43,7 @@ export default ({ data }) => {
             fluid (maxWidth:1500) {
             ...GatsbyContentfulFluid
             }
+            description
           }
           headerText {
             childMarkdownRemark {
@@ -74,6 +74,7 @@ export default ({ data }) => {
               fixed (width:120) {
                 ...GatsbyContentfulFixed
               }
+              description
             }
           }
         }
@@ -95,6 +96,7 @@ export default ({ data }) => {
               fixed (width:175){
                 ...GatsbyContentfulFixed
               }
+              description
             }
           }
         }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -25,7 +24,7 @@ export default ({ data }) => {
       <Header
         headerTitle={data.headerTitle}
         headerSubtitle={data.headerSubtitle}
-        headerImage={data.headerImage.fluid}
+        headerImage={data.headerImage}
         institution={data.institution}
         role={data.role}
       />
@@ -41,7 +40,7 @@ export default ({ data }) => {
       <ExperiencesBlock
         experiencesTitle={data.experiencesTitle}
         experiencesCopy={data.experiencesCopy.childMarkdownRemark.html}
-        experiencesImage={data.experiencesImage.fluid}
+        experiencesImage={data.experiencesImage}
       />
 
       <ExperiencesCarousel />
@@ -49,19 +48,19 @@ export default ({ data }) => {
       <ContentBoxes 
         contentBox1Title={data.contentBox1Title}
         contentBox1Text={data.contentBox1Text}
-        contentBox1Image={data.contentBox1Image.fluid}
+        contentBox1Image={data.contentBox1Image}
         contentBox2Title={data.contentBox2Title}
         contentBox2Text={data.contentBox2Text}
-        contentBox2Image={data.contentBox2Image.fluid}
+        contentBox2Image={data.contentBox2Image}
         contentBox3Title={data.contentBox3Title}
         contentBox3Text={data.contentBox3Text}
-        contentBox3Image={data.contentBox3Image.fluid}
+        contentBox3Image={data.contentBox3Image}
       />
 
       <OutsideMedicine 
         personalContentTitle={data.personalContentTitle}
         personalContentText={data.personalContentText.childMarkdownRemark.html}
-        personalContentImage={data.personalContentImage.fluid}
+        personalContentImage={data.personalContentImage}
       />
 
       <ContactBlock />
@@ -87,6 +86,7 @@ export const query = graphql`
             fluid(maxWidth: 1500) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           introSnippet
@@ -102,6 +102,7 @@ export const query = graphql`
             fluid(maxWidth: 200) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           experiencesTitle
@@ -114,6 +115,7 @@ export const query = graphql`
             fluid(maxWidth: 1750) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           contentBox1Title
@@ -122,6 +124,7 @@ export const query = graphql`
             fluid(maxWidth: 100) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           contentBox2Title
@@ -130,6 +133,7 @@ export const query = graphql`
             fluid(maxWidth: 100) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           contentBox3Title
@@ -138,6 +142,7 @@ export const query = graphql`
             fluid(maxWidth: 100) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           personalContentTitle
@@ -150,6 +155,7 @@ export const query = graphql`
             fluid(maxWidth: 1500) {
               ...GatsbyContentfulFluid
             }
+            description
           }
 
           contactNumber

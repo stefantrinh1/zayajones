@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Styles from "./Education.module.scss"
 
@@ -15,7 +14,7 @@ export default props => (
 
       return (
         <div className={Styles.institute} key={element.id}>
-          <Img fixed={element.instituteLogo.fixed} />
+          <Img fixed={element.instituteLogo.fixed} alt={element.instituteLogo.description}/>
           <div className={Styles.institutetext}>
             <p className={Styles.institutename}>{element.instituteName}</p>
             <p className={Styles.coursename}>{element.courseName}</p>

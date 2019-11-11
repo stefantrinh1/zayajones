@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
@@ -29,7 +28,7 @@ export default ({ data }) => {
 
             return (
               <div className="experience">
-                <Img fluid={experience.experiencePhoto.fluid} />
+                <Img fluid={experience.experiencePhoto.fluid} alt={experience.experiencePhoto.description} />
                 <div className="experienceinner">
                   <h3>{experience.experienceTitle}</h3>
                   <p>{experience.experienceDate}</p>
@@ -72,6 +71,7 @@ export const query = graphql`
             fluid(maxWidth: 500) {
               ...GatsbyContentfulFluid
             }
+            description
           }
         }
       }

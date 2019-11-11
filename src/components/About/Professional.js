@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Styles from "./Professional.module.scss"
 
@@ -15,7 +14,7 @@ export default props => (
 
       return (
         <div className={Styles.company} key={element.id}>
-          <Img fixed={element.companyLogo.fixed} />
+          <Img fixed={element.companyLogo.fixed} alt={element.companyLogo.description} />
           <div className={Styles.companytext}>
             <p className={Styles.companyname}>{element.companyName}</p>
             <p className={Styles.jobtitle}>{element.jobTitle}</p>

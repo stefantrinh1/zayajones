@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -35,7 +34,7 @@ export default ({ data }) => {
       <Header 
         title={generalPage.title}
         subtitle={generalPage.subtitle}
-        headerImage={generalPage.headerImage.fluid}
+        headerImage={generalPage.headerImage}
       />
 
       <div dangerouslySetInnerHTML={{__html:generalPage.introduction.childMarkdownRemark.html}}/>
@@ -46,6 +45,11 @@ export default ({ data }) => {
             return (
               <button
                 onClick={() => {
+                  const assessmentContainer = document.getElementById("assessmentcontainer")
+                  console.log(assessmentContainer)
+                  // Because projects is in another componenet it accesses the other components elemenet through id and non css module.
+                  assessmentContainer.scrollIntoView({behavior: "smooth", block:"start", inline: "start"})
+          
                   openClickedAssessment(assessment.symbol)
                 }}
               >
@@ -57,12 +61,12 @@ export default ({ data }) => {
 
         {currentAssessment.map(assessment => {
           return (
-            <div key={assessment.node.id}>
+            <div id="assessmentcontainer" key={assessment.node.id}>
               <h2>{assessment.node.title}</h2>
               <p>{assessment.node.date}</p>
-              <Img className="assessmentimage" fluid={assessment.node.image.fluid} />
+              <Img className="assessmentimage" fluid={assessment.node.image.fluid} alt={assessment.node.image.description} />
               <div dangerouslySetInnerHTML={{__html:assessment.node.mainDescription.childMarkdownRemark.html}} />
-              <a target="_blank" href={assessment.node.fullReport.file.url}><button>See Full Report</button></a>
+              <a target="_blank" rel="noopener noreferrer" href={assessment.node.fullReport.file.url}><button>See Full Report</button></a>
             </div>
           )
         })}
@@ -84,6 +88,7 @@ export const query = graphql`
             fluid {
               ...GatsbyContentfulFluid
             }
+            description
           }
           introduction {
             childMarkdownRemark {
@@ -105,6 +110,7 @@ export const query = graphql`
             fluid {
               ...GatsbyContentfulFluid
             }
+            description
           }
           fullReport {
             file {
@@ -131,6 +137,7 @@ export const query = graphql`
             fluid {
               ...GatsbyContentfulFluid
             }
+            description
           }
           fullReport {
             file {
@@ -157,6 +164,7 @@ export const query = graphql`
             fluid {
               ...GatsbyContentfulFluid
             }
+            description
           }
           fullReport {
             file {
@@ -183,6 +191,7 @@ export const query = graphql`
             fluid {
               ...GatsbyContentfulFluid
             }
+            description
           }
           fullReport {
             file {

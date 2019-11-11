@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import UnderConstruction from "../components/UnderConstruction";
 import InstagramFeed from "../components/Instagram/InstagramFeed"
 
 export default ({ data }) => (

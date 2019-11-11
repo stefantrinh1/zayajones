@@ -15,7 +15,7 @@ export default props => {
         <Link to="/about">
           <button className={Styles.aboutbtn}>See Full Page</button>
         </Link>
-        <a target="_blank" href={props.CV}>
+        <a target="_blank" rel="noopener noreferrer" href={props.CV}>
         <button className={Styles.downloadbtn}>
           Download CV
         </button>

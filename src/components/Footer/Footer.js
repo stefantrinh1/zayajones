@@ -5,7 +5,7 @@ import Logo from '../../images/logo.png';
 const Footer = () => (
   <footer className={Styles.footer}>
     <div className={Styles.logo}>
-      <img src={Logo} />
+      <img src={Logo} alt="Z"/>
     </div>
     <div className={Styles.copyright}>
       © {new Date().getFullYear()},{` `}
