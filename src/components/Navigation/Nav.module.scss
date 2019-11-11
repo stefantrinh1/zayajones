@@ -18,17 +18,17 @@
 
 // Icons Styles
 .navIcon {
-  width: 50%;
+  width: 10%;
+  max-width: 100px;
   text-align: left;
 }
 .navIcon img {
-  min-width: 80px;
-  max-width: 120px;
+  height: 2.2em;
 }
 
 // Hamburger and Close Block Styles
 .hamburgerContainer {
-  width: 50%;
+  width: 90%;
 }
 .hamburger {
   height: 100%;
@@ -83,7 +83,7 @@
 }
 
 .navItem {
-  padding: 0.4em;
+  padding: 0.3em;
   color: white;
 }
 
@@ -123,7 +123,8 @@
   }
 
   .navIcon img {
-    min-width: 100px;
+    width: unset;
+    min-width: unset;
     max-height: unset;
     max-width: unset;
     height: 2.2em;

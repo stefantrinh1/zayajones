@@ -6,7 +6,7 @@ import Styles from "./OutsideMedicine.module.scss"
 export default props => (
   <section className={Styles.personalcontainer}>
     <h3 className={Styles.mobiletitle}>{props.personalContentTitle}</h3>
-    <Img fluid={props.personalContentImage} />
+    <Img className={Styles.image} fluid={props.personalContentImage} />
     <div className={Styles.textcontainer}>
       <h3 className={Styles.desktoptitle}>{props.personalContentTitle}</h3>
       <div

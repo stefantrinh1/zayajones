@@ -101,7 +101,8 @@ class Navigation extends React.Component {
       { label: 'About', link: "/about" },
       { label: 'Experiences', link: "/experiences" },
       { label: 'CiM Assessments', link: "/cimassessments" },
-      // { label: 'Reflections', link: "/reflections" },
+      { label: 'Reflections', link: "/reflections" },
+      { label: 'Goals', link: "/goals" },
       { label: 'Contact', link: "/contact" }
     ];
 

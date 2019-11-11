@@ -24,6 +24,13 @@ button:hover {
 
 }
 
+p a {
+    font-weight: 600;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 @media (min-width:767px) {
     body {
     font-size: calc(6px + 1.3vw);

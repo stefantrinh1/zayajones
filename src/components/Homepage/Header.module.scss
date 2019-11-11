@@ -74,6 +74,13 @@
     box-shadow: 5px 3px 7px grey;
   }
 
+  .image{ 
+    transition: all ease-in-out 2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
   .copycontainer {
     position: unset;
     text-align: left;
@@ -126,7 +133,7 @@
   }
 
   .headerbtn button {
-    background:$secondary;
+    background:black;
     font-size: 1.1em;
   }
 

@@ -2,10 +2,18 @@
     text-align: center;
     margin: 0 auto;
     max-width: 767px;
-    padding: 2em;
+    padding: 0.5em 0 2em;
 }
 
 .container img {
     width: 100%;
     max-width: 400px;
+}
+
+.container a {
+
+    color: blue;
+    &:hover {
+    text-decoration: underline;
+    }
 }
