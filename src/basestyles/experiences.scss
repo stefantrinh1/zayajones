@@ -16,6 +16,7 @@
     grid-auto-flow: dense;
     grid-gap: 1em;
     margin: 1.5em 0;
+
 }
 
 .experienceinner {
@@ -25,6 +26,7 @@
 .experience {
   border: solid 0.5px lightgray;
   box-sizing: border-box;
+  box-shadow: 1px 1px 9px lightgrey;
 }
 
 .experience div:nth-child(1) {
