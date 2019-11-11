@@ -42,6 +42,11 @@
     &:hover > .box > .image  {
       transform: rotate(360deg);      
     }
+
+    &:hover h3  {
+      text-decoration: underline;    
+    }
+
   }
 
 }
