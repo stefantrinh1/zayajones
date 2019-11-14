@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import logo from '../../../src/images/logo.png';
+import logo from '../../../src/images/Logos/logo.png';
 import closeIcon from '../../images/Icons/close.png';
 // import disableScroll from 'disable-scroll';
 import Styles from './Nav.module.scss';
