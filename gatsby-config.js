@@ -7,6 +7,7 @@ module.exports = {
     title: `Zaya Jones · Medical Student`,
     description: `I am Medical Student Attending Rocky Vista University of Osteopathic Medicine. Pursuing a long life career in medicine and passionate about helping others.`,
     author: `Zaya Jones`,
+    siteUrl:'https://www.zayajones.com',
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -33,6 +34,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.zayajones.com',
+        sitemap: 'https://www.zayajones.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

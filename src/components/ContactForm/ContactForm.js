@@ -138,13 +138,13 @@ export default () => {
       >
         <div className={Styles.formdatafields}>
           <fieldset className="contactfield">
-            <input id="name" name="name" placeholder="Name" />
+            <input id="name" name="Name" placeholder="Name" />
           </fieldset>
 
           <fieldset className="contactfield">
             <input
               id="email"
-              name="email"
+              name="Email Address"
               type="email"
               defaultValue=""
               required
@@ -153,13 +153,13 @@ export default () => {
           </fieldset>
 
           <fieldset className="contactfield">
-            <input id="color" name="color" placeholder="Contact Number" />
+            <input id="color" name="Contact Number" placeholder="Contact Number" />
           </fieldset>
 
           <fieldset className="contactfield">
             <textarea
               id="message"
-              name="message"
+              name="Message"
               rows="5"
               placeholder="Message"
             />
@@ -179,7 +179,7 @@ export default () => {
           </button>
         </div>
 
-        <div className="thankyou_message" style={{ display: "none", color: "white", padding: "4em", textAlign: "center" }}>
+        <div className="thankyou_message" style={{ display: "none", color: "black", padding: "4em", textAlign: "center" }}>
           <h2>
             Thank You for contacting Me! I will get back to you soon!
           </h2>
