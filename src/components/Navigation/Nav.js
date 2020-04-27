@@ -42,15 +42,15 @@ class Navigation extends React.Component {
   ShowOrHideNav() { (!this.state.navigationOpen ? this.OpenNav() : this.CloseNav()) }
 
   // brings Nav Onto Screen and disabled scrolling
-  OpenNav() { 
+  OpenNav() {
     // disableScroll.on();  
-    this.setState({ navigationOpen: true }) 
+    this.setState({ navigationOpen: true })
   }
 
   // move the navigation off screen and enabled scrolling
-  CloseNav() { 
+  CloseNav() {
     // disableScroll.off(); 
-    this.setState({ navigationOpen: false }) 
+    this.setState({ navigationOpen: false })
   }
 
   // Handles the Clicks
@@ -90,7 +90,6 @@ class Navigation extends React.Component {
       // document.addEventListener('click', outsideClickListener)
       document.addEventListener("click", navClickListener)
     }
-
   }
 
   render() {
@@ -101,10 +100,12 @@ class Navigation extends React.Component {
       { label: 'About', link: "/about" },
       { label: 'Experiences', link: "/experiences" },
       { label: 'CiM Assessments', link: "/cimassessments" },
-      { label: 'Reflections', link: "/reflections" },
-      { label: 'Goals', link: "/goals" },
+      // { label: 'Reflections', link: "/reflections" },
+      { label: 'Tutoring Application', link: "/tutoringapplication" },
+      // { label: 'Goals', link: "/goals" },
       { label: 'Contact', link: "/contact" }
     ];
+
 
     return (
 

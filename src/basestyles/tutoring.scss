@@ -1,0 +1,38 @@
+@import "./colors.scss";
+
+.videocontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.videocontainer .videodescription {
+    padding: 1em;
+}
+
+.videocontainer video {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.videocontainer .content {
+    padding: 1em 0;
+    // width: 35%;
+
+    h1 {
+        margin: 0 0 1em;
+        font-size: 1.4em;
+    }
+
+    blockquote {
+        margin: 0;
+        padding: 2em;
+        text-align: center;
+        background-color: $primary;
+        font-style: italic;
+        ::before,
+        ::after {
+            content: '"';
+            color: $secondary;
+        }
+    }
+}
