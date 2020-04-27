@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Video from "../content/Video/sample.mp4"
+import Video from "../content/Video/tutoring-application-video.mp4"
 import "../basestyles/tutoring.scss"
 
 export default () => (
