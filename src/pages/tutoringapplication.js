@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Video from "../content/Video/tutoring-application-video.mp4"
 import "../basestyles/tutoring.scss"
 
 export default () => (
@@ -11,9 +10,7 @@ export default () => (
 
             <div className='videodescription'>
                 <h1>Tutor Application</h1>
-                <video controls>
-                    <source src={Video} type="video/mp4" />
-                </video>
+                
                 <div className='content'>
 
                     <p>I am applying to be a tutor for the year of 20/21 and here is my video application.</p>
